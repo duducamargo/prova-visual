@@ -1,0 +1,29 @@
+### Requisação para a raiz da aplicação
+GET http://localhost:5020
+
+### Listar tarefas
+GET http://localhost:5000/api/tarefas/listar
+
+### Listar categorias
+GET http://localhost:5000/api/categoria/listar
+
+### Cadastrar categoria
+POST http://localhost:5000/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "categoriaTeste"
+}
+### Cadastrar tarefas
+POST http://localhost:5000/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+    "titulo" : "Teste",
+    "descricao" : "Teste",
+    "categoriaId" : "bfe4e7dc-81e4-4e47-a67b-d4fbf3e124bd"
+}
+
+
+### Atualizar tarefa
+PUT http://localhost:5000/api/tarefas/alterar/2f1b7dc1-3b9a-4e1a-a389-7f5d2f1c8f3e
